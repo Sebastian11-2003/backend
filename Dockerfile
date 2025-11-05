@@ -1,5 +1,5 @@
-# Gunakan Node.js versi stabil terbaru
-FROM node:22
+# Gunakan Node LTS slim supaya layer lebih stabil
+FROM node:22-bullseye-slim
 
 # Tentukan working directory
 WORKDIR /app
@@ -16,5 +16,5 @@ COPY . .
 # Expose port sesuai app.js
 EXPOSE 3000
 
-# Jalankan server menggunakan perintah start
+# Jalankan server
 CMD ["npm", "start"]
