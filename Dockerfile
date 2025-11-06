@@ -1,5 +1,5 @@
 # Gunakan Node LTS slim supaya layer lebih stabil
-FROM node:22-bullseye-slim
+FROM node:22
 # Tentukan working directory
 WORKDIR /app
 
