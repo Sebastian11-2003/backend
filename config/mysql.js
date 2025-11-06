@@ -6,7 +6,7 @@ let db = mysql.createPool({
   user: process.env.DB_USER || "root",
   password: process.env.DB_PASS || "root",
   database: process.env.DB_NAME || "todo_db",
-  port: process.env.DB_PORT || 3306,
+  port: process.env.DB_PORT || 3307,
   waitForConnections: true,
   connectionLimit: 50,
   queueLimit: 0,
